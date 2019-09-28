@@ -1,0 +1,42 @@
+// Variables
+$displayFont: 'Open Sans', sans-serif;
+$textFont: 'Open Sans Condensed', sans-serif;
+$mainBg: #c71f2e;
+$secBg: #f2f2f2;
+$success: #209b04;
+$whiteBg: #fbfbfb;
+$whiteFont: #f2f2f2;
+$redFont: #f11f30;
+$black: #333333;
+$greyFont: #727070;
+
+// Content
+.bricksBg {
+	background: url("https://us.123rf.com/450wm/malekas/malekas1707/malekas170700020/81702227-white-bricks-texture.jpg?ver=6");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btnSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+	.menuBtn {
+		padding: 15px 30px;
+		background: $whiteBg;
+		border: 2px solid $black;
+		display: inline-block;
+		color: $greyFont;
+		font-weight: 600;
+		font-family: $displayFont;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		&:hover {
+			background: $black;
+			color: $whiteFont;
+			transition: all .3s ease-in-out;
+		}
+	}
+}

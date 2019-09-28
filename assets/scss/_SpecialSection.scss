@@ -1,0 +1,96 @@
+#SpecialSection {
+	padding: 150px 0;
+	// background: $mainBg;
+
+	.titleSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.subTitle {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+		}
+		.mainTitle {
+			font-size: 5rem;
+			font-family: $displayFont;
+			text-transform: uppercase;
+			font-weight: 300;
+			padding: 25px 0;
+		}
+	}
+	.specialMenu {
+		padding: 100px 0;
+		.specialGrid {
+			padding: 20px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 15px;
+			text-align: center;
+			.box {
+				background: white;
+				&:hover {
+					cursor: pointer;
+					transition: all .3s ease-in-out;
+					-webkit-box-shadow: 0px 2px 18px 4px rgba(0, 0, 0, 0.75);
+					-moz-box-shadow: 0px 2px 18px 4px rgba(0, 0, 0, 0.75);
+					box-shadow: 0px 2px 18px 4px rgba(0, 0, 0, 0.75);
+				}
+			}
+			.foodBox {
+				.foodImg {
+					background-image: url("https://fesmag.com/images/stories/2018-06/Tony-Cs-2.jpg");
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					width: 100%;
+					height: 300px;
+					position: relative;
+					.priceCircle {
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: $black;
+						color: $whiteFont;
+						padding: 10px 15px;
+						border-bottom-right-radius: 5px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						.price {
+							font-size: 1rem;
+							font-family: $displayFont;
+						}
+					}
+				}
+				.specialDetails {
+					padding: 15px 0;
+					.title {
+						font-weight: 500;
+						text-transform: uppercase;
+						font-size: 1.3rem;
+						font-family: $displayFont;
+						display: inline-block;
+					}
+					.specialInfo {
+						color: $greyFont;
+						font-size: 1.3rem;
+						font-weight: 500;
+						padding: 15px 20px;
+						line-height: 1.3;
+					}
+				}
+			}
+		}
+	}
+	// .img-section {
+	// 	padding: 20px 0;
+	// 	.bar-img {
+	// 		background-image: url("https://fesmag.com/images/stories/2018-06/Tony-Cs-2.jpg");
+	// 		background-position: center;
+	// 		background-size: cover;
+	// 		max-width: 400px;
+	// 		height: 600px;
+	// 		margin: 0 auto;
+	// 	}
+	// }
+}

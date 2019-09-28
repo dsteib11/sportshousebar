@@ -1,0 +1,30 @@
+header {
+	.container {
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		.logo {
+			font-family: $displayFont;
+			color: $whiteFont;
+			text-transform: uppercase;
+			font-size: 3rem;
+			letter-spacing: .2rem;
+		}
+		.navMenu {
+			a {
+				padding: 0 15px;
+				color: $whiteFont;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				&:hover {
+					transition: all .3s ease-in-out;
+					color: $redFont;
+				}
+			}
+		}
+	}
+}

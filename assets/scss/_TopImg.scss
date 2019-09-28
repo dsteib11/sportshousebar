@@ -1,0 +1,58 @@
+#topImg {
+	height: 90vh;
+	width: 100%;
+	background: linear-gradient(135deg, rgba(0, 0, 0, .5) 0, #002d77 100%);
+	background-image: linear-gradient(135deg, rgba(0, 0, 0, .1) 0, #000 100%),
+		url("http://bestsportsbarsaltlakecity.com/wp-content/uploads/2015/11/The-Best-Beer-and-Food-Pairings.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	position: relative;
+	.titleSection {
+		display: flex;
+		flex-direction: column;
+		padding: 200px;
+		.mainTitle {
+			h3 {
+				font-family: $displayFont;
+				color: $whiteFont;
+				text-transform: uppercase;
+				font-size: 1rem;
+			}
+			h1 {
+				font-size: 6rem;
+				font-family: $displayFont;
+				color: $whiteFont;
+				font-weight: 700;
+			}
+		}
+		.infoSection {
+			padding: 50px 0 0;
+			color: $whiteFont;
+			font-size: 1rem;
+			.contactInfo {
+				.booking {
+					text-transform: uppercase;
+					padding-bottom: 10px;
+				}
+			}
+			.number {
+				font-size: 1.5rem;
+				padding-bottom: 10px;
+			}
+			.hours {
+				font-family: $displayFont;
+				text-transform: uppercase;
+				display: flex;
+				strong {
+					font-family: $textFont;
+					padding: 0 5px;
+					text-transform: capitalize;
+				}
+				.time {
+					font-family: $textFont;
+				}
+			}
+		}
+	}
+}

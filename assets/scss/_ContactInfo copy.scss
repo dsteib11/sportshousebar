@@ -1,0 +1,74 @@
+#ContactInfo {
+	padding: 150px 0;
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		background: rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+		.eventSection {
+			padding: 20px;
+			.eventList {
+				text-align: center;
+				font-family: $displayFont;
+				margin: 0 auto;
+				height: 100%;
+				.title {
+					text-align: center;
+					padding: 10px;
+					font-family: $displayFont;
+					text-transform: uppercase;
+					font-size: 2.5rem;
+					font-weight: 600;
+				}
+				.eventDate {
+					padding: 20px 0;
+					.eventTitle {
+						font-family: $displayFont;
+						font-weight: 500;
+						font-size: 1.3rem;
+					}
+					.info {
+						padding: 10px;
+						font-family: $textFont;
+						color: $greyFont;
+						font-size: 1rem;
+						text-transform: capitalize;
+					}
+				}
+			}
+			.partySection {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.partyBtn {
+					padding: 15px 30px;
+					background: $whiteBg;
+					border: 2px solid $black;
+					display: inline-block;
+					color: $greyFont;
+					font-weight: 600;
+					font-family: $displayFont;
+					font-size: 1.3rem;
+					text-transform: uppercase;
+					&:hover {
+						background: $black;
+						color: $whiteFont;
+						transition: all .3s ease-in-out;
+					}
+				}
+			}
+		}
+		.img-section {
+			padding: 20px 0;
+			.bar-img {
+				background-image: url("http://bestsportsbarsaltlakecity.com/wp-content/uploads/2015/11/The-Best-Beer-and-Food-Pairings.jpg");
+				background-position: center;
+				background-size: cover;
+				max-width: 400px;
+				height: 600px;
+				margin: 0 auto;
+			}
+		}
+	}
+}

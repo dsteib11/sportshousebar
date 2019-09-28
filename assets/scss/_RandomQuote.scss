@@ -1,0 +1,32 @@
+#RandomQuote {
+	padding: 230px 0;
+	background: linear-gradient(135deg, rgba(0, 0, 0, .5) 0, #002d77 100%);
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	.titleSection {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.titleContent {
+			max-width: 530px;
+			color: $whiteFont;
+			.subTitle {
+				text-align: center;
+				font-size: 2rem;
+				text-transform: uppercase;
+			}
+			.mainTitle {
+				font-size: 9rem;
+				font-family: $displayFont;
+				text-transform: uppercase;
+				padding: 15px 0 20px;
+				font-weight: 500;
+			}
+			.join {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
