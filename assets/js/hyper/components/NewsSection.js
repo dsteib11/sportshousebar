@@ -1,22 +1,23 @@
 import { h, app } from 'hyperapp';
 
-export default function ContactInfo({ state, actions }) {
+export default function NewsSection({ state, actions }) {
 	return (
-		<section id="ContactInfo">
+		<section id="NewsSection">
 			<div className="container">
 				<div className="titleSection">
-					<div className="mainTitle">contact us</div>
+					<div className="subTitle">see what they are saying</div>
+					<div className="mainTitle">news + press</div>
 				</div>
-				<div className="contactListSection">
-					<div className="contactGrid">
+				<div className="newsListSection">
+					<div className="newsGrid">
 						<div
-							className="contactPic"
+							className="newsPic"
 							style={{
 								backgroundImage:
 									'url("https://www.bouncesportingclub.com/wp-content/uploads/friends-cheering-and-drinking-together-at-a-bar.jpg")'
 							}}
 						/>
-						<div className="contactList">
+						<div className="newsList">
 							<div className="box">
 								<div className="box-info">
 									<p>

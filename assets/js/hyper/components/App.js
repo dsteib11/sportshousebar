@@ -4,8 +4,9 @@ import TopImg from './TopImg.js';
 import EventInfo from './EventInfo.js';
 import SpecialSection from './SpecialSection.js';
 import RandomQuote from './RandomQuote.js';
+import NewsSection from './NewsSection.js';
 import ContactInfo from './ContactInfo.js';
-import ReviewSection from './ReviewSection.js';
+import Footer from './Footer.js';
 
 export default function App({ state, actions }) {
 	return (
@@ -15,8 +16,9 @@ export default function App({ state, actions }) {
 			<EventInfo state={state} actions={actions} />
 			<SpecialSection state={state} actions={actions} />
 			<RandomQuote state={state} actions={actions} />
+			<NewsSection state={state} actions={actions} />
 			<ContactInfo state={state} actions={actions} />
-			<ReviewSection state={state} actions={actions} />
+			<Footer state={state} actions={actions} />
 		</div>
 	);
 }

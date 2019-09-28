@@ -2,7 +2,7 @@ import { h, app } from 'hyperapp';
 
 export default function EventInfo({ state, actions }) {
 	return (
-		<section id="EventInfo" className="bricksBg">
+		<section id="EventInfo">
 			<div className="container">
 				<div className="grid">
 					<div className="eventSection">
@@ -34,7 +34,7 @@ export default function EventInfo({ state, actions }) {
 						</div>
 					</div>
 					<div className="img-section">
-						<div className="bar-img">image</div>
+						<div className="bar-img" />
 					</div>
 				</div>
 			</div>

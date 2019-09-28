@@ -1,11 +1,15 @@
-#ContactInfo {
-	padding: 150px 0;
-	background: $secBg;
+#NewsSection {
+	padding: 200px 0;
+
 	.titleSection {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 50px;
+		.subTitle {
+			font-size: 1.3rem;
+			text-transform: uppercase;
+		}
 		.mainTitle {
 			font-size: 5rem;
 			font-family: $displayFont;
@@ -14,13 +18,13 @@
 			padding: 25px 0;
 		}
 	}
-	.contactGrid {
+	.newsGrid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		height: 300px;
 		width: 100%;
 		column-gap: 10px;
-		.contactPic {
+		.newsPic {
 			background-repeat: no-repeat;
 			background: cover;
 			background-position: center bottom;

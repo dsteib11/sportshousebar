@@ -10,7 +10,7 @@ export default function Header({ state, actions }) {
 					<a href="#">about</a>
 					<a href="#">private parties</a>
 					<a href="#">reservations</a>
-					<a href="#">ultimate dining card</a>
+					<a href="#">gift cards</a>
 				</nav>
 			</div>
 		</header>
