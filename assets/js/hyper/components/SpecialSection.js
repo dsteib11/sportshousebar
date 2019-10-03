@@ -1,6 +1,26 @@
 import { h, app } from 'hyperapp';
 
 export default function SpecialSection({ state, actions }) {
+	let loopMenu = () => {
+		return state.specialMenuData.map(item => {
+			console.log(item.title);
+			return (
+				<div className="box">
+					<div className="boxImg">
+						<div className="priceCircle">
+							<div className="price">${item.price}</div>
+						</div>
+					</div>
+					<div className="specialDetails">
+						<span className="title">{item.title} </span>
+						<div className="specialInfo">
+							<p>{item.description}</p>
+						</div>
+					</div>
+				</div>
+			);
+		});
+	};
 	return (
 		<section id="SpecialSection" className="bricksBg">
 			<div className="container">
@@ -9,50 +29,7 @@ export default function SpecialSection({ state, actions }) {
 					<div className="mainTitle">september</div>
 				</div>
 				<div className="specialMenu">
-					<div className="specialGrid">
-						<div className="box foodBox">
-							<div className="foodImg">
-								<div className="priceCircle">
-									<div className="price">$20</div>
-								</div>
-							</div>
-							<div className="specialDetails">
-								<span className="title">Special Me Food </span>
-								<div className="specialInfo">
-									Our USDA Certified Angus Beef and American-Style Kobe Beef are
-									ground in-house twice daily.
-								</div>
-							</div>
-						</div>
-						<div className="box foodBox">
-							<div className="foodImg">
-								<div className="priceCircle">
-									<div className="price">$20</div>
-								</div>
-							</div>
-							<div className="specialDetails">
-								<span className="title">Special Me Food </span>
-								<div className="specialInfo">
-									Our USDA Certified Angus Beef and American-Style Kobe Beef are
-									ground in-house twice daily.
-								</div>
-							</div>
-						</div>
-						<div className="box foodBox">
-							<div className="foodImg">
-								<div className="priceCircle">
-									<div className="price">$20</div>
-								</div>
-							</div>
-							<div className="specialDetails">
-								<span className="title">Special Me Food </span>
-								<div className="specialInfo">
-									Our USDA Certified Angus Beef and American-Style Kobe Beef are
-									ground in-house twice daily.
-								</div>
-							</div>
-						</div>
-					</div>
+					<div className="specialGrid">{loopMenu()}</div>
 					<div className="btnSection">
 						<a href="#" className="menuBtn">
 							view menu

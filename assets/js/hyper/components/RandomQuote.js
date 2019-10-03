@@ -14,7 +14,7 @@ export default function RandomQuote({ state, actions }) {
 					<div className="titleContent">
 						<div className="subTitle">there is always</div>
 						<div className="mainTitle">sports</div>
-						<span className="join">-- Come and experience a great time!!</span>
+						<span className="quote">-- Come and experience a great time!!</span>
 					</div>
 				</div>
 			</div>

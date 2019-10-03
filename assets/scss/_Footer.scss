@@ -1,9 +1,52 @@
 #Footer {
-	padding: 150px 0;
+	padding: 40px 0;
 	.mainTitle {
 		text-align: center;
 		font-size: 1.6rem;
 		font-family: $displayFont;
 		text-transform: uppercase;
+		padding: 10px 0;
+	}
+	.footerMenu {
+		width: 600px;
+		margin: auto;
+		.groupLinks {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 50px 0;
+			.navLinks a {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				padding: 10px 0;
+				border-right: 2px solid $black;
+				font-size: .9rem;
+				color: $greyFont;
+				text-transform: uppercase;
+				&:hover {
+					color: $redFont;
+					transition: all .3s ease-in-out;
+				}
+			}
+			.socialLinks a {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				color: $greyFont;
+				padding: 15px 0;
+				&:hover {
+					color: $redFont;
+					transition: all .3s ease-in-out;
+				}
+			}
+		}
+	}
+	.copyright {
+		text-align: right;
+		font-weight: 500;
+		font-size: .7rem;
+		text-transform: uppercase;
+		padding: 20px 0;
+		font-family: $displayFont;
 	}
 }

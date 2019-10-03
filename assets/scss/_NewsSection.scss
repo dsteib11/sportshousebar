@@ -18,32 +18,89 @@
 			padding: 25px 0;
 		}
 	}
-	.newsGrid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		height: 300px;
-		width: 100%;
-		column-gap: 10px;
-		.newsPic {
-			background-repeat: no-repeat;
-			background: cover;
-			background-position: center bottom;
-			box-shadow: 0px 17px 9px -8px rgba(0, 0, 0, 0.52);
-		}
-		.box {
+	.newsListSection {
+		.newsGrid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 			height: 300px;
-			display: flex;
-			justify-content: center;
-			text-align: center;
-			.box-info {
-				width: 400px;
-				display: flex;
-				align-items: center;
-				p {
-					font-family: $displayFont;
-					line-height: 1.5;
-					font-weight: 400;
-					font-size: 1.6rem;
+			width: 100%;
+			column-gap: 10px;
+			.newsPic {
+				background-repeat: no-repeat;
+				background: cover;
+				background-position: center bottom;
+				box-shadow: 0px 17px 9px -8px rgba(0, 0, 0, 0.52);
+			}
+			.newsList {
+				.box {
+					display: flex;
+					justify-content: center;
+					text-align: center;
+					.box-info {
+						display: flex;
+						flex-direction: column;
+						text-align: center;
+						.newsTitle {
+							text-align: center;
+							padding-bottom: 15px;
+							font-size: 1.5rem;
+							font-weight: 600;
+							text-transform: uppercase;
+							text-align: left;
+							font-family: $displayFont;
+						}
+						.newsHighlight {
+							text-align: center;
+							padding-bottom: 15px;
+							font-size: 1.2rem;
+							width: 250px;
+							text-align: left;
+							font-family: $displayFont;
+						}
+						.newsInfo {
+							width: 400px;
+							font-family: $textFont;
+							line-height: 1.5;
+							text-align: left;
+							width: 300px;
+							font-weight: 400;
+							font-size: 1rem;
+						}
+						.authorSection {
+							display: flex;
+							padding: 20px 0;
+							.author {
+								font-weight: 600;
+								font-size: .9rem;
+							}
+							.authorInfo {
+								font-size: .9rem;
+								padding: 0 10px;
+							}
+						}
+						.arrowSection {
+							display: flex;
+							justify-content: flex-end;
+							padding: 20px 0;
+							font-size: 1.5rem;
+							.prev {
+								padding: 0 20px;
+								&:hover {
+									cursor: pointer;
+									color: $redFont;
+									transition: all .3s ease-in-out;
+								}
+							}
+							.next {
+								padding: 0 20px;
+								&:hover {
+									cursor: pointer;
+									color: $redFont;
+									transition: all .3s ease-in-out;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

@@ -20,10 +20,28 @@ export default function NewsSection({ state, actions }) {
 						<div className="newsList">
 							<div className="box">
 								<div className="box-info">
-									<p>
+									<div className="newsTitle">sandy springs neighbor</div>
+									<div className="newsHighlight">
+										New sports restaurant pairs food and drinks like no other!!
+									</div>
+									<p className="newsInfo">
 										SPORTS HOUSE BAR NAMED ONE OF “THE TOP 50 EMERGING
 										RESTAURANT CHAINS” BY Bar Food Sports MAGAZINE
 									</p>
+									<div className="authorSection">
+										<div className="author">Christine Fontain:</div>
+										<div className="authorInfo">
+											Sandy Springs top food critic
+										</div>
+									</div>
+									<div className="arrowSection">
+										<div className="prev">
+											<i className="fas fa-chevron-left" />
+										</div>
+										<div className="next">
+											<i className="fas fa-chevron-right" />
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

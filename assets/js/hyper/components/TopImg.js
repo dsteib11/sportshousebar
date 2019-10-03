@@ -1,13 +1,15 @@
 import { h, app } from 'hyperapp';
 
 export default function TopImg({ state, actions }) {
+	console.log(state);
+
 	return (
 		<section id="topImg">
 			<div className="container">
 				<div className="titleSection">
 					<div className="mainTitle">
 						<h3>the</h3>
-						<h1>Sports House Bar</h1>
+						<h1>{state.companyInfo.title}</h1>
 					</div>
 					<div className="infoSection">
 						<div className="contactInfo">
