@@ -83,20 +83,25 @@
 							justify-content: flex-end;
 							padding: 20px 0;
 							font-size: 1.5rem;
-							.prev {
-								padding: 0 20px;
+							color: $greyFont;
+							.active {
+								color: $black;
 								&:hover {
 									cursor: pointer;
 									color: $redFont;
 									transition: all .3s ease-in-out;
 								}
 							}
+							.prev {
+								padding: 0 20px;
+								&:hover {
+									cursor: pointer;
+								}
+							}
 							.next {
 								padding: 0 20px;
 								&:hover {
 									cursor: pointer;
-									color: $redFont;
-									transition: all .3s ease-in-out;
 								}
 							}
 						}

@@ -1,10 +1,10 @@
-const companyInfo = {
+let companyInfo = {
 	title: 'The Sports House Bar',
 	phone: '(404)-333-6666',
 	location: 'Buckhead, Georgia'
 };
 
-const specialMenuData = [
+let specialMenuData = [
 	{
 		title: 'House Wings',
 		description:
@@ -23,7 +23,7 @@ const specialMenuData = [
 	}
 ];
 
-const randomQuote = [
+let randomQuoteData = [
 	{
 		mainTitle: 'sports',
 		quote: 'Come and experience a great time'
@@ -38,7 +38,7 @@ const randomQuote = [
 	}
 ];
 
-const newsSection = [
+let newsData = [
 	{
 		newsTitle: 'sandy springs neighbor',
 		newsHighlight:
@@ -46,7 +46,7 @@ const newsSection = [
 		newsInfo:
 			'SPORTS HOUSE BAR NAMED ONE OF "THE TOP 50 EMERGING RESTAURANT CHAINS" BY Bar Food Sports MAGAZINE',
 		author: 'Christine Fontain',
-		authoInfo: 'Sandy Springs top food critic'
+		authorInfo: 'Sandy Springs top food critic'
 	},
 	{
 		newsTitle: 'dunwoody prime',
@@ -55,7 +55,7 @@ const newsSection = [
 		newsInfo:
 			'SPORTS HOUSE BAR NAMED ONE OF "THE TOP 50 EMERGING RESTAURANT CHAINS" BY Bar Food Sports MAGAZINE',
 		author: 'Christine Fontain',
-		authoInfo: 'Sandy Springs top food critic'
+		authorInfo: 'Sandy Springs top food critic'
 	},
 	{
 		newsTitle: 'hello atl',
@@ -64,7 +64,7 @@ const newsSection = [
 		newsInfo:
 			'SPORTS HOUSE BAR NAMED ONE OF "THE TOP 50 EMERGING RESTAURANT CHAINS" BY Bar Food Sports MAGAZINE',
 		author: 'Christine Fontain',
-		authoInfo: 'Sandy Springs top food critic'
+		authorInfo: 'Sandy Springs top food critic'
 	},
 	{
 		newsTitle: 'buckhead times',
@@ -73,13 +73,25 @@ const newsSection = [
 		newsInfo:
 			'SPORTS HOUSE BAR NAMED ONE OF "THE TOP 50 EMERGING RESTAURANT CHAINS" BY Bar Food Sports MAGAZINE',
 		author: 'Christine Fontain',
-		authoInfo: 'Sandy Springs top food critic'
+		authorInfo: 'Sandy Springs top food critic'
+	},
+	{
+		newsTitle: 'cumberland times',
+		newsHighlight:
+			'New sports restaurant pairs food and drinks like no other!!',
+		newsInfo:
+			'SPORTS HOUSE BAR NAMED ONE OF "THE TOP 50 EMERGING RESTAURANT CHAINS" BY Bar Food Sports MAGAZINE',
+		author: 'Christine Fontain',
+		authorInfo: 'Sandy Springs top food critic'
 	}
 ];
 export const globalState = {
 	count: 0,
 	companyInfo,
 	specialMenuData,
-	newsSection,
-	randomQuote
+	newsData,
+	randomQuoteData,
+	newsStatus: {
+		currentNews: 0
+	}
 };

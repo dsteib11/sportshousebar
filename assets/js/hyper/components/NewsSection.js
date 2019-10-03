@@ -1,6 +1,31 @@
 import { h, app } from 'hyperapp';
 
 export default function NewsSection({ state, actions }) {
+	let currentNews = () => {
+		return (
+			<div>
+				<div className="newsTitle">
+					{state.newsData[state.newsStatus.currentNews].newsTitle}
+				</div>
+				<div className="newsHighlight">
+					{state.newsData[state.newsStatus.currentNews].newsHighlight}
+				</div>
+				<p className="newsInfo">
+					{state.newsData[state.newsStatus.currentNews].newsInfo}
+				</p>
+				<div className="authorSection">
+					<div className="author">
+						{' '}
+						{state.newsData[state.newsStatus.currentNews].author}:
+					</div>
+					<div className="authorInfo">
+						{state.newsData[state.newsStatus.currentNews].authorInfo}
+					</div>
+				</div>
+			</div>
+		);
+	};
+
 	return (
 		<section id="NewsSection">
 			<div className="container">
@@ -20,26 +45,24 @@ export default function NewsSection({ state, actions }) {
 						<div className="newsList">
 							<div className="box">
 								<div className="box-info">
-									<div className="newsTitle">sandy springs neighbor</div>
-									<div className="newsHighlight">
-										New sports restaurant pairs food and drinks like no other!!
-									</div>
-									<p className="newsInfo">
-										SPORTS HOUSE BAR NAMED ONE OF “THE TOP 50 EMERGING
-										RESTAURANT CHAINS” BY Bar Food Sports MAGAZINE
-									</p>
-									<div className="authorSection">
-										<div className="author">Christine Fontain:</div>
-										<div className="authorInfo">
-											Sandy Springs top food critic
-										</div>
-									</div>
+									{currentNews()}
 									<div className="arrowSection">
 										<div className="prev">
-											<i className="fas fa-chevron-left" />
+											<i
+												className={`fas fa-chevron-left ${
+													state.newsStatus.currentNews > 0 ? 'active' : ''
+												}`}
+											/>
 										</div>
 										<div className="next">
-											<i className="fas fa-chevron-right" />
+											<i
+												className={`fas fa-chevron-right ${
+													state.newsStatus.currentNews ==
+													state.newsData.length - 1
+														? ''
+														: 'active'
+												}`}
+											/>
 										</div>
 									</div>
 								</div>
