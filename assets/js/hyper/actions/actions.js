@@ -1,16 +1,20 @@
-export const actions = {
-	up,
-	intro,
-	showMenu
+let newsLeftClicked = function(state, actions) {
+	return {
+		newsStatus: {
+			currentNews: state.newsStatus.currentNews - 1
+		}
+	};
 };
 
-function up(state, actions) {
-	return { count: state.count + 1 };
-}
+let newsRightClicked = function(state, actions) {
+	return {
+		newsStatus: {
+			currentNews: state.newsStatus.currentNews + 1
+		}
+	};
+};
 
-function showMenu() {}
-
-function intro(state, actions) {
-	console.log('Just ran my first action');
-	return { count: state.count + 1 };
-}
+export const actions = {
+	newsRightClicked,
+	newsLeftClicked
+};

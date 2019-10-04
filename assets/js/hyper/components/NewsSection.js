@@ -26,6 +26,20 @@ export default function NewsSection({ state, actions }) {
 		);
 	};
 
+	let leftClickBtn = () => {
+		if (state.newsStatus.currentNews == 0) {
+			console.log('end of list');
+		} else {
+			actions.newsLeftClicked();
+		}
+	};
+	let rightClickBtn = () => {
+		if (state.newsStatus.currentNews == state.newsData.length - 1) {
+			console.log('end of list');
+		} else {
+			actions.newsRightClicked();
+		}
+	};
 	return (
 		<section id="NewsSection">
 			<div className="container">
@@ -49,6 +63,7 @@ export default function NewsSection({ state, actions }) {
 									<div className="arrowSection">
 										<div className="prev">
 											<i
+												onclick={leftClickBtn}
 												className={`fas fa-chevron-left ${
 													state.newsStatus.currentNews > 0 ? 'active' : ''
 												}`}
@@ -56,6 +71,7 @@ export default function NewsSection({ state, actions }) {
 										</div>
 										<div className="next">
 											<i
+												onclick={rightClickBtn}
 												className={`fas fa-chevron-right ${
 													state.newsStatus.currentNews ==
 													state.newsData.length - 1

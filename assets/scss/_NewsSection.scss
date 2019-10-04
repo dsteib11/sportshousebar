@@ -41,8 +41,7 @@
 						flex-direction: column;
 						text-align: center;
 						.newsTitle {
-							text-align: center;
-							padding-bottom: 15px;
+							margin-bottom: 15px;
 							font-size: 1.5rem;
 							font-weight: 600;
 							text-transform: uppercase;
@@ -82,28 +81,28 @@
 							display: flex;
 							justify-content: flex-end;
 							padding: 20px 0;
-							font-size: 1.5rem;
-							color: $greyFont;
-							.active {
+							.fa-chevron-left,
+							.fa-chevron-right {
+								padding: 0 20px;
+								font-size: 1.5rem;
+								color: $greyFont;
+								&:hover {
+									cursor: pointer;
+								}
+							}
+							.fa-chevron-right.active,
+							.fa-chevron-left.active {
 								color: $black;
-								&:hover {
-									cursor: pointer;
-									color: $redFont;
-									transition: all .3s ease-in-out;
-								}
 							}
-							.prev {
-								padding: 0 20px;
-								&:hover {
-									cursor: pointer;
-								}
-							}
-							.next {
-								padding: 0 20px;
-								&:hover {
-									cursor: pointer;
-								}
-							}
+							// .fa-chevron-left.active,
+							// .fa-chevron-right.active {
+							// 	color: $greyFont;
+							// 	&:hover {
+							// 		cursor: pointer;
+							// 		color: $redFont;
+							// 		transition: all .3s ease-in-out;
+							// 	}
+							// }
 						}
 					}
 				}

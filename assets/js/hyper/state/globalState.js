@@ -40,7 +40,7 @@ let randomQuoteData = [
 
 let newsData = [
 	{
-		newsTitle: 'sandy springs neighbor',
+		newsTitle: 'springs neighbor',
 		newsHighlight:
 			'New sports restaurant pairs food and drinks like no other!!',
 		newsInfo:
