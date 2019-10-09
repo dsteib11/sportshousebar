@@ -1,6 +1,10 @@
 #ContactInfo {
 	padding: 150px 0;
-	background: $secBg;
+	background: linear-gradient(to bottom, rgba(130, 130, 126, 0) 0%, #82827e 90%),
+		url(https://us.123rf.com/450wm/malekas/malekas1707/malekas170700020/81702227-white-bricks-texture.jpg?ver=6);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	.titleSection {
 		display: flex;
 		flex-direction: column;
@@ -21,16 +25,64 @@
 		}
 	}
 	.contactInfoSection {
-		background: $whiteBg;
-		.contactGrid {
+		background: linear-gradient(to bottom, rgba(130, 130, 126, 0) 0%, $black 90%);
+		label {
+			font-size: 1.3rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			padding: 10px 0;
+		}
+		.contactForm {
+			margin: 0 auto;
+			width: 900px;
+			padding: 30px;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			height: 300px;
-			width: 100%;
-			column-gap: 10px;
-			text-align: center;
+			.contactSec {
+				border-right: 2px solid $whiteBg;
+				.formBox {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 10px;
+					input {
+						width: 75%;
+						padding: 5px;
+					}
+				}
+			}
+			.messageSec {
+				.formMessage {
+					padding-left: 15px;
+					display: flex;
+					flex-direction: column;
+					textarea {
+						padding: 5px;
+					}
+				}
+			}
+		}
+		.submitBtn {
+			padding: 20px 0;
+			display: flex;
 			justify-content: center;
 			align-items: center;
+			input {
+				padding: 15px 30px;
+				background: $whiteBg;
+				border: 2px solid $black;
+				display: inline-block;
+				color: $greyFont;
+				font-weight: 600;
+				font-family: $displayFont;
+				font-size: 1.3rem;
+				text-transform: uppercase;
+				&:hover {
+					cursor: pointer;
+					background: $greyFont;
+					color: $whiteFont;
+					transition: all .3s ease-in-out;
+				}
+			}
 		}
 	}
 	// .contactGrid {

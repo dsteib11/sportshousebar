@@ -6,19 +6,44 @@ export default function ContactInfo({ state, actions }) {
 			<div className="container">
 				<div className="titleSection">
 					<div className="mainTitle">contact us</div>
-					<div className="subTitle">Where is your house??</div>
+					<div className="subTitle">
+						Comments, questions?? Give us a shout..
+					</div>
 				</div>
 				<div className="contactInfoSection">
-					<div className="contactGrid">
-						<div className="infoSectionLeft">
-							<div className="location">{state.companyInfo.location}</div>
-							<div className="address">Lorem ipsum dolor sit amet.</div>
-							<div className="email">Lorem ipsum dolor sit amet.</div>
+					<form action="#" method="post" className="contactForm">
+						<div className="contactSec">
+							<div className="formBox">
+								<label htmlFor="email"> Email (required)</label>
+								<input
+									type="email"
+									placeholder="shbrestaurant@gmail.com"
+									name="email"
+								/>
+							</div>
+							<div className="formBox">
+								<label htmlFor="email">first name (required)</label>
+								<input type="text" placeholder="John" name="fname" />
+							</div>
+							<div className="formBox">
+								<label htmlFor="email">last name (required)</label>
+								<input type="text" placeholder="Jack" name="lname" />
+							</div>
 						</div>
-						<div className="infoSectionRight">
-							<div className="phone">Lorem ipsum dolor sit amet.</div>
-							<div className="serviceHrs">Lorem ipsum dolor sit amet.</div>
+						<div className="messageSec">
+							<div className="formMessage">
+								<label htmlFor="email">message</label>
+								<textarea
+									name="message"
+									placeholder="message me here..."
+									cols="30"
+									rows="12"
+								/>
+							</div>
 						</div>
+					</form>
+					<div className="submitBtn">
+						<input type="submit" value="connect" />
 					</div>
 				</div>
 			</div>
